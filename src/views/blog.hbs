@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.104.2" />
+    <title>Blog Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/blog/"
+    />
+
+    <link
+      href="/docs/5.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      href="/docs/5.2/assets/img/favicons/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.2/assets/img/favicons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.2/assets/img/favicons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg"
+      color="#712cf9"
+    />
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico" />
+    <meta name="theme-color" content="#712cf9" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <style>
+      body {
+        background-color: #c4bebe;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      #myBtn {
+        position: fixed;
+        bottom: 40px;
+        right: 0px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 18px;
+      }
+
+      #myBtn:hover {
+        background-color: #555;
+      }
+      #t1 {
+        background-color: #eeecec;
+        border-radius: 20px;
+        padding: 8px;
+        margin: 8px;
+      }
+      #t2 {
+        background-color: #f8f7f7;
+        border-radius: 25px;
+        margin: 8px;
+        padding: 5px;
+        color: black;
+      }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-scroller py-1 mb-2" id="t2">
+        <nav class="nav d-flex justify-content-center">
+          <a class="p-2 link-secondary" href="#">About Us</a>
+          <a class="p-2 link-secondary" href="#">Members</a>
+          <a class="p-2 link-secondary" href="#">Projects</a>
+          <a class="p-2 link-secondary" href="#">Blog</a>
+          <a class="p-2 link-secondary" href="#">Events</a>
+        </nav>
+      </div>
+    </div>
+
+    <main class="container">
+      <div
+        class="p-4 p-md-5 mb-4 rounded text-bg-dark animate__animated animate__fadeIn animate_slower"
+      >
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 fst-italic">
+            Title of a longer featured blog post
+          </h1>
+          <p class="lead my-3">
+            Multiple lines of text that form the lede, informing new readers
+            quickly and efficiently about what’s most interesting in this post’s
+            contents.
+          </p>
+          <p class="lead mb-0">
+            <a href="#" class="text-white fw-bold"
+              ><!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Continue Reading...
+              </button></a
+            >
+            <!-- Button Trigger ends -->
+          </p>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              totam quod accusantium qui nesciunt natus architecto accusamus
+              recusandae odit quibusdam, suscipit rerum labore. Laboriosam
+              quidem, et odit assumenda suscipit repellendus dolor, sapiente
+              aliquid vel iure tenetur ducimus debitis nulla error soluta ad
+              temporibus atque recusandae eligendi eaque in. Fugiat error ad
+              tempora? Mollitia ex quos optio minus fugiat illum quisquam quasi!
+              Obcaecati voluptatibus animi, inventore voluptas laboriosam
+              praesentium maxime atque ex, recusandae fuga debitis laborum earum
+              minima possimus exercitationem. Soluta expedita maiores
+              reiciendis, harum numquam officiis alias libero aspernatur fugiat
+              tempora aut dolores ratione inventore quasi esse sequi, voluptates
+              quos iste quo cumque cupiditate quibusdam, eum omnis et.
+              Voluptatem qui at, voluptates ea autem reprehenderit velit dolor
+              aliquam aperiam sint ab temporibus commodi iusto neque minima
+              nesciunt ipsam blanditiis quaerat hic saepe! Odio assumenda
+              cupiditate magnam alias, natus saepe temporibus veritatis
+              exercitationem, quos quis distinctio. Doloremque, odit praesentium
+              sequi, omnis impedit ex quos tempore aspernatur dignissimos
+              officia quod illum iure dicta doloribus iusto aperiam at quas a
+              deleniti cupiditate modi labore consequuntur. Architecto quis,
+              quia sed saepe, eius, odio rem officia eaque soluta reprehenderit
+              obcaecati veniam quisquam provident optio. Veniam dolor odit
+              debitis. Adipisci, commodi voluptate totam earum beatae nesciunt?
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Ends -->
+
+      <div class="row g-5">
+        <div
+          class="col-md-8 animate__animated animate__fadeInLeft animate_slower"
+        >
+          <h3 class="pb-4 mb-4 fst-italic border-bottom">Blogs</h3>
+
+          <article class="blog-post" id="t1">
+            <h2 class="blog-post-title mb-1">Another blog post</h2>
+            <p class="blog-post-meta">
+              December 23, 2020 by <a href="#">Jacob</a>
+            </p>
+
+            <p>
+              This is some additional paragraph placeholder content. It has been
+              written to fill the available space and show how a longer snippet
+              of text affects the surrounding content. We'll repeat it often to
+              keep the demonstration flowing, so be on the lookout for this
+              exact same string of text.
+            </p>
+            <blockquote>
+              <p>
+                Longer quote goes here, maybe with some
+                <strong>emphasized text</strong> in the middle of it.
+              </p>
+            </blockquote>
+            <p>
+              This is some additional paragraph placeholder content. It has been
+              written to fill the available space and show how a longer snippet
+              of text affects the surrounding content. We'll repeat it often to
+              keep the demonstration flowing, so be on the lookout for this
+              exact same string of text.
+            </p>
+          </article>
+
+          <article class="blog-post" data-aos="fade-right" id="t1">
+            <h2 class="blog-post-title mb-1">Another blog post</h2>
+            <p class="blog-post-meta">
+              December 23, 2020 by <a href="#">Jacob</a>
+            </p>
+
+            <p>
+              This is some additional paragraph placeholder content. It has been
+              written to fill the available space and show how a longer snippet
+              of text affects the surrounding content. We'll repeat it often to
+              keep the demonstration flowing, so be on the lookout for this
+              exact same string of text.
+            </p>
+            <blockquote>
+              <p>
+                Longer quote goes here, maybe with some
+                <strong>emphasized text</strong> in the middle of it.
+              </p>
+            </blockquote>
+            <p>
+              This is some additional paragraph placeholder content. It has been
+              written to fill the available space and show how a longer snippet
+              of text affects the surrounding content. We'll repeat it often to
+              keep the demonstration flowing, so be on the lookout for this
+              exact same string of text.
+            </p>
+            <h3>Example table</h3>
+            <p>And don't forget about tables in these posts:</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Upvotes</th>
+                  <th>Downvotes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Alice</td>
+                  <td>10</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>Bob</td>
+                  <td>4</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Charlie</td>
+                  <td>7</td>
+                  <td>9</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Totals</td>
+                  <td>21</td>
+                  <td>23</td>
+                </tr>
+              </tfoot>
+            </table>
+
+            <p>
+              This is some additional paragraph placeholder content. It's a
+              slightly shorter version of the other highly repetitive body text
+              used throughout.
+            </p>
+          </article>
+
+          <article class="blog-post" data-aos="fade-right" id="t1">
+            <h2 class="blog-post-title mb-1">Another blog post</h2>
+            <p class="blog-post-meta">
+              December 23, 2020 by <a href="#">Jacob</a>
+            </p>
+
+            <p>
+              This is some additional paragraph placeholder content. It has been
+              written to fill the available space and show how a longer snippet
+              of text affects the surrounding content. We'll repeat it often to
+              keep the demonstration flowing, so be on the lookout for this
+              exact same string of text.
+            </p>
+            <blockquote>
+              <p>
+                Longer quote goes here, maybe with some
+                <strong>emphasized text</strong> in the middle of it.
+              </p>
+            </blockquote>
+            <p>
+              This is some additional paragraph placeholder content. It has been
+              written to fill the available space and show how a longer snippet
+              of text affects the surrounding content. We'll repeat it often to
+              keep the demonstration flowing, so be on the lookout for this
+              exact same string of text.
+            </p>
+          </article>
+
+          <nav class="blog-pagination" aria-label="Pagination">
+            <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+            <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
+          </nav>
+        </div>
+
+        <div
+          class="col-md-4 animate__animated animate__fadeInRight animate_slower"
+        >
+          <div class="position-sticky" style="top: 2rem">
+            <div class="p-4 mb-3 bg-light rounded">
+              <h4 class="fst-italic">About DataByte</h4>
+              <p class="mb-0">
+                Customize this section to tell your visitors a little bit about
+                your publication, writers, content, or something else entirely.
+                Totally up to you.
+              </p>
+            </div>
+
+            <div class="p-4" id="t1">
+              <h4 class="fst-italic">Archives</h4>
+              <ol class="list-unstyled mb-0">
+                <li><a href="#">March 2023</a></li>
+                <li><a href="#">February 2023</a></li>
+                <li><a href="#">January 2023</a></li>
+                <li><a href="#">December 2022</a></li>
+                <li><a href="#">November 2022</a></li>
+                <li><a href="#">October 2022</a></li>
+                <li><a href="#">September 2022</a></li>
+                <li><a href="#">August 2022</a></li>
+                <li><a href="#">July 2022</a></li>
+                <li><a href="#">June 2022</a></li>
+                <li><a href="#">May 2022</a></li>
+                <li><a href="#">April 2022</a></li>
+              </ol>
+            </div>
+
+            <div class="p-4" id="t1">
+              <h4 class="fst-italic">Connect Us</h4>
+              <ol class="list-unstyled">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="blog-footer">
+      <p>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          Top
+        </button>
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const myModal = document.getElementById("myModal");
+      const myInput = document.getElementById("myInput");
+
+      myModal.addEventListener("shown.bs.modal", () => {
+        myInput.focus();
+      });
+
+      let mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
